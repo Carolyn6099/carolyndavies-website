@@ -249,6 +249,8 @@ nav {
   background: rgba(24, 48, 82, 0.76);
 }
 .page-header .container { position: relative; z-index: 1; }
+/* Blended composite headers already have navy baked in — suppress the ::before overlay */
+.page-header--blended::before { background: rgba(24, 48, 82, 0.15); }
 .page-header h1     { color: white; margin-bottom: 0.6rem; }
 .page-header p      { color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 580px; margin-bottom: 0; }
 
